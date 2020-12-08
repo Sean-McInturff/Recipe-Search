@@ -1,13 +1,55 @@
-body {
+html, body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  min-height: 100vh;
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.search-form{
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar{
+  width: 50%;
+  border: none;
+  padding: 10px;
+}
+
+.search-btn{
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  border: none;
+  padding: 10px 20px;
+  color: black;
+}
+
+.recipes{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.calories{
+  border: 1px solid white;
+}
+
+.title{
+  text-align: center;
+  font-family: monospace;
+  font-size: 50px;
+  color: #173F5F;
+  text-decoration: underline;
+  margin: auto;
+  padding: 15px;
+}
+
+@media (max-width: 600px) {
+  .title {
+      font-size: 35px;
+  }
 }
